@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sohbet — Türkçe Sesli Asistan</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>🎙️ Sohbet</h1>
+    <p class="sub">Açık kaynak Türkçe sesli asistan — konuşarak kesebilirsiniz (barge-in).</p>
+
+    <div class="controls">
+      <button id="micBtn">🎤 Mikrofonu Aç</button>
+      <span id="state" class="state">boşta</span>
+    </div>
+
+    <div class="text-input">
+      <input id="textInput" type="text" placeholder="Ya da yazarak test edin..." />
+      <button id="sendBtn">Gönder</button>
+    </div>
+
+    <section class="log" id="log"></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
